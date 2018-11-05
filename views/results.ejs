@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>results page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	
+		<form action="/selection" method="get" id="form1">
+	    <% data.forEach(function(itterator) { %>
+	        <button type="submit" form="form1" value="<%=itterator.id%>" name="uri">
+	        	<p id="songname"><%= itterator.name%></p>
+	        	<p id="albumname"><%= itterator.album.name%></p>
+	        	<p id="artists"><% itterator.artists.forEach(function(i) { %>
+	        		<%= i.name%>
+	        		<%});%>
+	        	</p>
+	        </button>
+	    <% }); %>
+	    </form>
+	
+
+	
+</body>
+</html>

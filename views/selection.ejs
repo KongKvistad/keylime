@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Here's your key!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Days+One');
+	</style>
+</head>
+<body>
+	<h1 id="headline">This is your key:</h1>
+	<p id="datastorage"><%=data2%></p>
+	<div id="arrow">
+		<i class="fas fa-caret-down"></i>
+	</div>
+	<div id="img-container">
+		<img src="../assets/key_graph.png" id="wheel">
+	</div>
+	<script>
+		window.onload = function(){
+			let key = document.getElementById("datastorage").innerHTML;
+			let img=document.getElementById('wheel');
+			
+			switch (key) {
+			case "0":
+				img.style.animation = "spin-c 3s 1";
+				break;
+			case "1":
+				img.style.animation = "spin-c-SHARP 3s 1 forwards";
+				break;
+			case "2":
+				img.style.animation = "spin-d 3s 1 forwards";
+				break;
+			case "3":
+				img.style.animation = "spin-d-SHARP 3s 1 forwards";
+				break;
+			case "4":
+				img.style.animation = "spin-e 3s 1 forwards";
+				break;
+			case "5":
+				img.style.animation = "spin-f 3s 1 forwards";
+				break;
+			case "6":
+				img.style.animation = "spin-f-SHARP 3s 1 forwards";
+				break;
+			case "7":
+				img.style.animation = "spin-g 3s 1 forwards";
+				break;
+			case "8":
+				img.style.animation = "spin-g-SHARP 3s 1 forwards";
+				break;
+			case "9":
+				img.style.animation = "spin-a 3s 1 forwards";
+				break;
+			case "10":
+				img.style.animation = "spin-a-SHARP 3s 1 forwards";
+				break;
+			case "11":
+				img.style.animation = "spin-b 3s 1 forwards";
+				break;				
+			default:
+				alert("Something went wrong!")
+				break;
+			};
+		};
+	</script>
+</body>
+</html>

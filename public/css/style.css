@@ -1,0 +1,230 @@
+html {
+	height:100%;
+	width: 100%;
+}
+
+body {
+	width: 100%;
+  	height: 100%;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Days+One');
+
+
+/*search.ejs*/
+#searchbox {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
+
+	margin-top: 16%;
+}
+#searchform {
+	grid-column-start: 2;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+#searchfield {
+	width: 90%;
+	border-radius: 25px;
+	border-style: none;
+	padding-left: 3%;
+}
+
+#searchfield:focus {
+	padding-left: 3%;
+}
+
+#search-btn {
+	display: flex;
+	grid-row-start: 2;
+	grid-column-start: 2;
+
+	font-family: 'Days One', sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 0em;
+	color: #689865;
+
+	border-radius: 25px;
+	border-width: 0px;
+	box-shadow: 4px 5px 7px 1px rgba(34,87,34,0.29);
+
+
+	width: 30%;
+	height: 2em;
+	justify-content: center;
+	justify-self: center;
+
+	background-image: linear-gradient(120deg, #b1fc79c7 20%, #96e6a1 100%);
+}
+
+/* results.ejs */
+
+#form1{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0px auto;
+	margin-top: 3%;
+}
+
+#form1 > button {
+	padding: 1% 0% 1% 0%;
+	margin-bottom: 3%;
+	border-radius: 5px;
+	border-width: 0px;
+
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 4px 5px 7px 1px rgba(34,87,34,0.29);
+
+	font-family: 'Days One', sans-serif;
+	
+}
+
+#songname {
+	font-size: 2em;
+}
+
+
+/* selection.ejs */
+
+#headline {
+	font-family: 'Days One', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+#datastorage {
+	display: none;
+}
+
+#arrow {
+	font-size: 5em;
+	text-align: center;
+	opacity: 0.7;
+}
+
+img {
+	display: flex;
+	margin: 0px auto;
+	width: 30%;
+	height: 30%;
+}
+
+
+@keyframes spin-c { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes spin-c-SHARP { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(330deg); 
+    }
+}
+
+@keyframes spin-d { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(300deg); 
+    }
+}
+
+@keyframes spin-d-SHARP { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(270deg); 
+    }
+}
+
+@keyframes spin-e { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(240deg); 
+    }
+}
+
+@keyframes spin-f { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(210deg); 
+    }
+}
+
+@keyframes spin-f-SHARP { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(180deg); 
+    }
+}
+
+@keyframes spin-g { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(150deg); 
+    }
+}
+
+@keyframes spin-g-SHARP { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(120deg); 
+    }
+}
+
+@keyframes spin-a { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(90deg); 
+    }
+}
+
+@keyframes spin-a-SHARP { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(60deg); 
+    }
+}
+
+@keyframes spin-b { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(30deg); 
+    }
+}
