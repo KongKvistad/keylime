@@ -18,7 +18,7 @@ var client_secret = '315284531d52477f80f6704a38867cea'; // Your secret
 var authOptions = {
   url: 'https://accounts.spotify.com/api/token',
   headers: {
-    'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
+    'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64'))
   },
   form: {
     grant_type: 'client_credentials'
