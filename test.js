@@ -4,7 +4,7 @@ let app = express();
 
 let request = require("request");
 
-const port = 3000;
+var port = process.env.port || 3000;
 
 app.use(express.static('public'));
 
@@ -85,5 +85,5 @@ app.get('/selection', function(req, res) {
 
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port);
 
