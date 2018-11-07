@@ -3,15 +3,20 @@
 <head>
 	<title>Here's your key!</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Days+One');
+	</style>
 </head>
 <body>
 	<h1 id="headline">This is your key:</h1>
 	<p id="datastorage"><%=data2%></p>
 	<div id="arrow">
-		
+		<i class="fas fa-caret-down"></i>
 	</div>
-	
+	<div id="img-container">
+		<img src="../assets/key_graph.png" id="wheel">
+	</div>
 	<script>
 		window.onload = function(){
 			let key = document.getElementById("datastorage").innerHTML;
