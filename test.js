@@ -4,8 +4,6 @@ let app = express();
 
 let request = require("request");
 
-var port = process.env.port || 3000;
-
 app.use(express.static('public'));
 
 
@@ -85,5 +83,5 @@ app.get('/selection', function(req, res) {
 
 
 
-app.listen(port);
+app.listen(process.env.PORT || 3000);
 
