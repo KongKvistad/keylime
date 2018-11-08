@@ -25,7 +25,7 @@ var authOptions = {
 };
 
 
-app.get('/search', function (req, res) {
+app.get('/', function (req, res) {
 	res.render("search");
 });
 
