@@ -9,8 +9,8 @@ app.use(express.static('public'));
 
 app.set("view engine", "ejs");
 
-var client_id = 'd41d817e895147038eb9b490249c0d69'; // Your client id
-var client_secret = '315284531d52477f80f6704a38867cea'; // Your secret
+var client_id = 'super secret id'; // Your client id
+var client_secret = 'super secret secret'; // Your secret
 
 // your application requests authorization
 var authOptions = {
