@@ -57,7 +57,7 @@ body {
 	box-shadow: 4px 5px 7px 1px rgba(34,87,34,0.29);
 
 
-	width: 30%;
+	width: 40%;
 	height: 2em;
 	justify-content: center;
 	justify-self: center;
@@ -89,7 +89,13 @@ body {
 }
 
 #songname {
-	font-size: 2em;
+	font-size: 2.4em;
+}
+
+#albumname, #artists {
+    font-size: 1.5em;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
@@ -103,7 +109,7 @@ body {
 	margin-bottom: 2%;
 }
 
-#datastorage {
+#datastorage1, #datastorage2 {
 	display: none;
 }
 
@@ -113,11 +119,12 @@ body {
 	opacity: 0.7;
 }
 
+
 img {
 	display: flex;
 	margin: 0px auto;
-	width: 30%;
-	height: 30%;
+	width: 35%;
+	height: 35%;
 }
 
 

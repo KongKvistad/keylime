@@ -71,7 +71,9 @@ app.get('/selection', function(req, res) {
 		    };
 		    request.get(options, function(error, response, body) {
 		    	let data2 = body.key;
-		    	res.render("selection", {data2});
+		    	let data3 = body.mode;
+		    	console.log("musical key: " + data3)
+		    	res.render("selection", {data2, data3});
 		    });
 		}
 	});

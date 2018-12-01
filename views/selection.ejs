@@ -9,8 +9,9 @@
 	</style>
 </head>
 <body>
-	<h1 id="headline">This is your key:</h1>
-	<p id="datastorage"><%=data2%></p>
+	<h1 id="headline">Your key is in</h1>
+	<p id="datastorage1"><%=data2%></p>
+	<p id="datastorage2"><%=data3%></p>
 	<div id="arrow">
 		<i class="fas fa-caret-down"></i>
 	</div>
@@ -19,49 +20,83 @@
 	</div>
 	<script>
 		window.onload = function(){
-			let key = document.getElementById("datastorage").innerHTML;
-			let img=document.getElementById('wheel');
+			
+			let key = document.getElementById("datastorage1").innerHTML;
+			let img = document.getElementById('wheel');
 			
 			switch (key) {
 			case "0":
 				img.style.animation = "spin-c 3s 1";
+				let text = document.createTextNode(" C ");
+				document.getElementById("headline").appendChild(text);
 				break;
 			case "1":
 				img.style.animation = "spin-c-SHARP 3s 1 forwards";
+				let text1 = document.createTextNode(" C# ");
+				document.getElementById("headline").appendChild(text1);
 				break;
 			case "2":
 				img.style.animation = "spin-d 3s 1 forwards";
+				let text2 = document.createTextNode(" D ");
+				document.getElementById("headline").appendChild(text2);
 				break;
 			case "3":
 				img.style.animation = "spin-d-SHARP 3s 1 forwards";
+				let text3 = document.createTextNode(" D# ");
+				document.getElementById("headline").appendChild(text3);
 				break;
 			case "4":
 				img.style.animation = "spin-e 3s 1 forwards";
+				let text4 = document.createTextNode(" E ");
+				document.getElementById("headline").appendChild(text4);
 				break;
 			case "5":
 				img.style.animation = "spin-f 3s 1 forwards";
+				let text5 = document.createTextNode(" F ");
+				document.getElementById("headline").appendChild(text5);
 				break;
 			case "6":
 				img.style.animation = "spin-f-SHARP 3s 1 forwards";
+				let text6 = document.createTextNode(" F# ");
+				document.getElementById("headline").appendChild(text6);
 				break;
 			case "7":
 				img.style.animation = "spin-g 3s 1 forwards";
+				let text7 = document.createTextNode(" G ");
+				document.getElementById("headline").appendChild(text7);
 				break;
 			case "8":
 				img.style.animation = "spin-g-SHARP 3s 1 forwards";
+				let text8 = document.createTextNode(" G# ");
+				document.getElementById("headline").appendChild(text8);
 				break;
 			case "9":
 				img.style.animation = "spin-a 3s 1 forwards";
+				let text9 = document.createTextNode(" A ");
+				document.getElementById("headline").appendChild(text9);
 				break;
 			case "10":
 				img.style.animation = "spin-a-SHARP 3s 1 forwards";
+				let text10 = document.createTextNode(" A# ");
+				document.getElementById("headline").appendChild(text10);
 				break;
 			case "11":
 				img.style.animation = "spin-b 3s 1 forwards";
+				let text11 = document.createTextNode(" B ");
+				document.getElementById("headline").appendChild(text11);
 				break;				
 			default:
 				alert("Something went wrong!")
 				break;
+			};
+
+			let mode = document.getElementById("datastorage2").innerHTML;
+			if (mode === "0") {
+				let modetext = document.createTextNode(" Minor");
+				document.getElementById("headline").appendChild(modetext);
+			} else {
+				let modetext = document.createTextNode(" Major");
+				document.getElementById("headline").appendChild(modetext);
 			};
 		};
 	</script>
